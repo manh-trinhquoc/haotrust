@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                    }
+                }
+            }
+        }
+    </script>
+    <style type="text/tailwindcss">
+        @layer utilities {
+          .content-auto {
+            content-visibility: auto;
+          }
+        }
+      </style>
+</head>
+
+<body>
+    <div class="text-center relative">
+        <div class="z-10 relative">
+            <h1 class="pt-[75px] text-[60px] font-[700]">Lĩnh vực đầu tư</h1>
+            <img src="img/deco-1.png" alt="" class="ml-auto mr-auto pb-[40px]">
+        </div>
+        <img src="img/bg-1.jpg" alt="" class="absolute left-0 right-0 top-0 bottom-0 object-cover h-[100%]">
+    </div>
+    <div class="grid grid-cols-12 gap-0 relative">
+        <img src="img/row-1-top-foreground.png" alt="" class="absolute top-0 left-0 w-full z-10">
+        <div class="col-span-8">
+            <img src="img/row-1-left.jpg" alt="" class="w-full">
+        </div>
+        <div class="col-span-4 relative">
+            <img src="img/row-1-bg-right.jpg" alt="" class="absolute top-0 right-0 left-0 bottom-0 object-cover h-[100%] w-[100%]">
+            <img src="img/deco-row-2-top-right.png" alt="" class="absolute top-0 right-0">
+            <img src="img/deco-row-2-bottom-left.png" alt="" class="absolute bottom-0 left-0">
+            <div class="relative z-10 text-center w-[50%] ml-auto mr-auto flex items-center justify-items-center h-[100%]">
+                <div>
+                    <h2 class="text-[38px] font-[500]">TECHNOLOGY - <span class="inline-block">DIGITAL FINANCE</span></h2>
+                    <img src="img/deco-2.png" alt="" class="inline-block">
+                    <p class="text-justify">
+                        Focus on investing in developing Industrial cities, Smart cities ... with high-tech parks, modern R&D centers, advanced export processing zones,
+                        international standard universities, logistics, airport…
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="grid grid-cols-12 gap-0 relative">
+
+        <div class="col-span-4 relative">
+            <img src="img/row-2-bg.jpg" alt="" class="absolute top-0 right-0 left-0 bottom-0 object-cover h-[100%] w-[100%]">
+            <img src="img/row-2-deco-top-right.png" alt="" class="absolute top-0 right-0">
+            <img src="img/row-2-deco-bottom-left.png" alt="" class="absolute bottom-0 left-0">
+            <div class="relative z-10 text-center w-[50%] ml-auto mr-auto flex items-center justify-items-center h-[100%]">
+                <div>
+                    <h2 class="text-[38px] font-[500]">TECHNOLOGY - <span class="inline-block">DIGITAL FINANCE</span></h2>
+                    <img src="img/row-2-deco.png" alt="" class="inline-block">
+                    <p class="text-justify">
+                        Focus on investing in developing Industrial cities, Smart cities ... with high-tech parks, modern R&D centers, advanced export processing zones,
+                        international standard universities, logistics, airport…
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="col-span-8">
+            <img src="img/row-2.jpg" alt="" class="w-full">
+        </div>
+    </div>
+</body>
+
+</html>
